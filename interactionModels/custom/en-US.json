@@ -1,0 +1,504 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "movshovich test",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no"
+          ]
+        },
+        {
+          "name": "GetRecipeInfo",
+          "slots": [
+            {
+              "name": "recipe",
+              "type": "ChocolateChipCookies",
+              "samples": [
+                "chocolate chip cookies",
+                "recipe",
+                "chocolate chip cookies recipe"
+              ]
+            },
+            {
+              "name": "ingredients",
+              "type": "ListOfIngredients"
+            },
+            {
+              "name": "check",
+              "type": "check"
+            }
+          ],
+          "samples": [
+            "What is thine {recipe} ",
+            "Behold thine {recipe} ",
+            "give me your {recipe} ",
+            "what\u0027s the {recipe} ",
+            "what are the {ingredients} for this {recipe}",
+            "say the {recipe}",
+            "Tell me the {recipe}",
+            "Give me the {recipe}",
+            "What is the {recipe}",
+            "which {ingredients} will i need to make this {recipe}",
+            "Which {ingredients} will i need to cook this {recipe}",
+            "{check} {recipe} need {ingredients}",
+            "What {ingredients} do i need to make this {recipe}",
+            "{recipe} now please",
+            "Are there any {ingredients} in this {recipe}",
+            "{check} {ingredients} is in this {recipe}",
+            "{check} {ingredients} in this {recipe}",
+            "{check} any type of {ingredients} in this {recipe}",
+            "{check} this {recipe} {ingredients} free",
+            "{check} {recipe} contain {ingredients}",
+            "{recipe} now",
+            "{check} {recipe} contain any {ingredients}",
+            "What {ingredients} will I need to cook this {recipe}",
+            "Give me the {ingredients} for this {recipe}",
+            "What {ingredients} do i need for this {recipe}"
+          ]
+        },
+        {
+          "name": "GetRecipeSteps",
+          "slots": [
+            {
+              "name": "recipeStep",
+              "type": "recipestep"
+            },
+            {
+              "name": "instruction",
+              "type": "instruction"
+            },
+            {
+              "name": "tool",
+              "type": "tool"
+            }
+          ],
+          "samples": [
+            "What are the {recipeStep}",
+            "What are the {recipeStep} for this recipe",
+            "Can I cook these {recipeStep} {instruction} an tool",
+            "Please {instruction} {recipeStep}",
+            "Please can you say that last {recipeStep} {instruction}",
+            "Please can you say that {recipeStep} {instruction}",
+            "Say that {recipeStep} part {instruction} ",
+            "Can you please {instruction} that last {recipeStep} again ",
+            "Please say that {recipeStep} {instruction} ",
+            "Say that {recipeStep} {instruction}",
+            "{instruction} that last {recipeStep}",
+            "Will I be able to cook this {recipeStep} {instruction} a {tool}",
+            "Will I be able to cook this {recipeStep} {instruction} an {tool} ",
+            "Can I {instruction} this {recipeStep} for tomorrow ",
+            "{instruction} will each {recipeStep} take",
+            "Give me the {instruction} {recipeStep}",
+            "Give me the {recipeStep}",
+            "Start {recipeStep} {instruction} ",
+            "Is this {recipeStep} {instruction}",
+            "{instruction} will this {recipeStep} take",
+            "Can I {instruction} this {recipeStep} in this recipe",
+            "{instruction} {recipeStep} are in this recipe",
+            "{instruction} that {recipeStep} louder please",
+            "Can you {instruction} that {recipeStep}",
+            "{instruction} {recipeStep}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Chocolate Chip Cookies Recipe",
+                "synonyms": [
+                  "Cookies Recipe",
+                  "Chocolate Chip Cookies",
+                  "recipe"
+                ]
+              }
+            }
+          ],
+          "name": "ChocolateChipCookies"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "nuts"
+              }
+            },
+            {
+              "name": {
+                "value": "coconut milk"
+              }
+            },
+            {
+              "name": {
+                "value": "almond butter"
+              }
+            },
+            {
+              "name": {
+                "value": "milk"
+              }
+            },
+            {
+              "name": {
+                "value": "ingredients"
+              }
+            },
+            {
+              "name": {
+                "value": "white chocolate"
+              }
+            },
+            {
+              "name": {
+                "value": "dark chocolate"
+              }
+            },
+            {
+              "name": {
+                "value": "semisweet chocolate chips"
+              }
+            },
+            {
+              "name": {
+                "value": "peanuts"
+              }
+            },
+            {
+              "name": {
+                "value": "walnuts"
+              }
+            },
+            {
+              "name": {
+                "value": "wheat flour"
+              }
+            },
+            {
+              "name": {
+                "value": "flour"
+              }
+            },
+            {
+              "name": {
+                "value": "all-purpose flour"
+              }
+            },
+            {
+              "name": {
+                "value": "salt"
+              }
+            },
+            {
+              "name": {
+                "value": "hot water"
+              }
+            },
+            {
+              "name": {
+                "value": "baking soda"
+              }
+            },
+            {
+              "name": {
+                "value": "vanilla extract"
+              }
+            },
+            {
+              "name": {
+                "value": "eggs"
+              }
+            },
+            {
+              "name": {
+                "value": "sugar"
+              }
+            },
+            {
+              "name": {
+                "value": "brown sugar"
+              }
+            },
+            {
+              "name": {
+                "value": "white sugar"
+              }
+            },
+            {
+              "name": {
+                "value": "butter"
+              }
+            }
+          ],
+          "name": "ListOfIngredients"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "does this"
+              }
+            },
+            {
+              "name": {
+                "value": "Can I substitute ",
+                "synonyms": [
+                  "Can I replace"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "can I use"
+              }
+            },
+            {
+              "name": {
+                "value": "is there",
+                "synonyms": [
+                  "is there any"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "can you make"
+              }
+            },
+            {
+              "name": {
+                "value": "can you use"
+              }
+            }
+          ],
+          "name": "check"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "RecipeStep",
+                "synonyms": [
+                  "recipesteps",
+                  "Steps",
+                  "Recipe Steps",
+                  "Recipe Step"
+                ]
+              }
+            }
+          ],
+          "name": "recipestep"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "without"
+              }
+            },
+            {
+              "name": {
+                "value": "how many ",
+                "synonyms": [
+                  "total number of",
+                  "number of "
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "previous",
+                "synonyms": [
+                  "go back"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "again",
+                "synonyms": [
+                  "part again"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "redo"
+              }
+            },
+            {
+              "name": {
+                "value": "optional"
+              }
+            },
+            {
+              "name": {
+                "value": "pause"
+              }
+            },
+            {
+              "name": {
+                "value": "start"
+              }
+            },
+            {
+              "name": {
+                "value": "skip"
+              }
+            },
+            {
+              "name": {
+                "value": "repeat"
+              }
+            },
+            {
+              "name": {
+                "value": "continue",
+                "synonyms": [
+                  "next"
+                ]
+              }
+            }
+          ],
+          "name": "instruction"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "hand mixer"
+              }
+            },
+            {
+              "name": {
+                "value": "stand miker"
+              }
+            },
+            {
+              "name": {
+                "value": "oven"
+              }
+            }
+          ],
+          "name": "tool"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "GetRecipeInfo",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "recipe",
+              "type": "ChocolateChipCookies",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.986512092094.279144169306"
+              }
+            },
+            {
+              "name": "ingredients",
+              "type": "ListOfIngredients",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "check",
+              "type": "check",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "GetRecipeSteps",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "recipeStep",
+              "type": "recipestep",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.385536966552.1053792947699"
+              }
+            },
+            {
+              "name": "instruction",
+              "type": "instruction",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "tool",
+              "type": "tool",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.986512092094.279144169306",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What recipe are you making?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.385536966552.1053792947699",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Make sure to say recipe step in your request. "
+          }
+        ]
+      }
+    ]
+  },
+  "version": "29"
+}
